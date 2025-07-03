@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #dbe9f4, #e1eaf5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Improved frosted card */
+.glass-box {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+.glass-box h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top:3%;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #2c3e50;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input::placeholder {
+  color: #7f8c8d;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Result */
+#weatherResult {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #2c3e50;
+}
